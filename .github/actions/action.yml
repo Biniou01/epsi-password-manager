@@ -4,4 +4,4 @@ runs:
     - name: Connextion SSH
       shell: bash
       run: |
-          | touch /var/www/html/pull.html
+           ls -l
