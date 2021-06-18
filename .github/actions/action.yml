@@ -1,7 +1,6 @@
 name: Connexion SSH
 runs:
   steps:
-    - name: Connextion SSH
       shell: bash
       run: |
            ls -l
