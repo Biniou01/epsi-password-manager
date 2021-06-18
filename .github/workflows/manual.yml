@@ -11,7 +11,7 @@ jobs:
 
     steps:
     - name: Connect to Server
-      uses: ./.github/actions/actions.yml
+      uses: ./.github/actions/action.yml
       env:
           SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
           REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
