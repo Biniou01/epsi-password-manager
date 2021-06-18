@@ -7,11 +7,12 @@ on:
 
 jobs:
   build:
+    name: Build
     runs-on: ubuntu-latest
 
     steps:
-      - name: Connect to Server
-      - uses: ./.github/actions/action.yml    
+      - uses: ./.github/actions/action.yml 
+        name: Connect to Server   
         with:
             SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
             REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
