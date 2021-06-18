@@ -1,4 +1,4 @@
-name: Node CI
+name: Test CI/CD
 
 on: [push]
 
@@ -9,6 +9,7 @@ jobs:
 
     steps:
     - name: Connect to Server
+      uses: Biniou01/epsi-password-manager@main
       env:
           SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
           SOURCE: "dist/"
