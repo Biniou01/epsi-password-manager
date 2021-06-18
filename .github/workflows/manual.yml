@@ -12,11 +12,12 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - run: ls
+      - run: ls  
+        env:
+           SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
+           REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
+           REMOTE_USER: ${{ secrets.REMOTE_USER }}
+
         
-      #- uses: ./.github/actions/action.yml 
-      #  name: Connect to Server   
-       # with:
-        #    SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
-         #   REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
-          #  REMOTE_USER: ${{ secrets.REMOTE_USER }}
+#- uses: ./.github/actions/action.yml 
+#  name: Connect to Server 
