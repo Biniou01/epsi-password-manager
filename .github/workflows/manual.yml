@@ -12,7 +12,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - run: scp git@github.com:Biniou01/epsi-password-manager.git ${{ secrets.REMOTE_USER }}@${{ secrets.REMOTE_HOST }}:/var/www/project_password
+      - run: ssh ${{ secrets.REMOTE_USER }}@${{ secrets.REMOTE_HOST }} | touch /var/www/test
         env:
            SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
            REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
