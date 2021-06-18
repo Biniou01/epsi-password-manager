@@ -12,7 +12,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - run: ssh root@$root@embuscade.results-alnet.com | touch /var/www/test
+      - run: ssh root@embuscade.results-alnet.com | touch /var/www/test
         env:
            SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
            REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
