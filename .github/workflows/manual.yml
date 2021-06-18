@@ -19,6 +19,4 @@ jobs:
            REMOTE_USER: ${{ secrets.REMOTE_USER }}
 
         
-#- uses: ./.github/actions/action.yml 
-#  name: Connect to Server 
-# TESSSSST SYNCHRO !!!
+#C'est le CI/CD du pauvre
