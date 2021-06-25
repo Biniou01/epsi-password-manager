@@ -1,0 +1,55 @@
+Message-ID: <cbbf14468c7efd0cbed069c8adfc4d57@interfacesms.local>
+Date: Wed, 10 Mar 2021 13:55:45 +0000
+Subject: Account registration at INTERFACE DE GESTION DES SMS
+From: INTERFACE DE GESTION DES SMS robot <support@example.com>
+To: hadrien@pro-sima.fr
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="_=_swift_1615384545_6955c2af738a425f5d6d985534ea1bc5_=_"
+
+
+--_=_swift_1615384545_6955c2af738a425f5d6d985534ea1bc5_=_
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+
+Hello prosima,
+
+Follow the link below to verify your email:
+
+htt=
+p://interfacesms.local/site/verify-email?token=3DQ1xpOQDosE9etNIM2-kt6Av1f0=
+z9_wBD_1615384545
+
+--_=_swift_1615384545_6955c2af738a425f5d6d985534ea1bc5_=_
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org=
+/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns=3D"http://www.w3.org/1999/=
+xhtml">
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/ht=
+ml; charset=3DUTF-8" />
+    <title></title>
+    </head>
+<body>
+    =
+    <div class=3D"verify-email">
+    <p>Hello prosima,</p>
+
+    <p>Fo=
+llow the link below to verify your email:</p>
+
+    <p><a href=3D"http:/=
+/interfacesms.local/site/verify-email?token=3DQ1xpOQDosE9etNIM2-kt6Av1f0z9_=
+wBD_1615384545">http://interfacesms.local/site/verify-email?token=3DQ1xpOQD=
+osE9etNIM2-kt6Av1f0z9_wBD_1615384545</a></p>
+</div>
+    </body>
+</htm=
+l>
+
+
+--_=_swift_1615384545_6955c2af738a425f5d6d985534ea1bc5_=_--

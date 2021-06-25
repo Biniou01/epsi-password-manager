@@ -1,0 +1,54 @@
+Message-ID: <185a883c1873f16e59fd1828781c84c1@localhost>
+Date: Thu, 24 Jun 2021 15:42:37 +0000
+Subject: Account registration at Gestion Mot de Passe
+From: Gestion Mot de Passe robot <support@example.com>
+To: hadrien.huret@epsi.fr
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="_=_swift_1624549357_ae92354964b59b5f0cf569ffc0cd7022_=_"
+
+
+--_=_swift_1624549357_ae92354964b59b5f0cf569ffc0cd7022_=_
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+
+Hello hadrix,
+
+Follow the link below to verify your email:
+
+http=
+://localhost:8080/site/verify-email?token=3DEn7ywcfnFbx2pKgagxYA57IxdVQ7r6K=
+Z_1624549357
+
+--_=_swift_1624549357_ae92354964b59b5f0cf569ffc0cd7022_=_
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org=
+/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns=3D"http://www.w3.org/1999/=
+xhtml">
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/ht=
+ml; charset=3DUTF-8" />
+    <title></title>
+    </head>
+<body>
+    =
+    <div class=3D"verify-email">
+    <p>Hello hadrix,</p>
+
+    <p>Fol=
+low the link below to verify your email:</p>
+
+    <p><a href=3D"http://=
+localhost:8080/site/verify-email?token=3DEn7ywcfnFbx2pKgagxYA57IxdVQ7r6KZ_1=
+624549357">http://localhost:8080/site/verify-email?token=3DEn7ywcfnFbx2pKga=
+gxYA57IxdVQ7r6KZ_1624549357</a></p>
+</div>
+    </body>
+</html>
+
+
+--_=_swift_1624549357_ae92354964b59b5f0cf569ffc0cd7022_=_--

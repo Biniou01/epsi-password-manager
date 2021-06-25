@@ -1,0 +1,55 @@
+Message-ID: <0af94efd2ecbbcb0c5113710d8b5af63@interfacesms.local>
+Date: Tue, 16 Feb 2021 08:14:24 +0000
+Subject: Account registration at INTERFACE DE GESTION DES SMS
+From: INTERFACE DE GESTION DES SMS robot <support@example.com>
+To: contact@topencheres.com
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="_=_swift_1613463264_16745ced4625d9423030143ca63e75ce_=_"
+
+
+--_=_swift_1613463264_16745ced4625d9423030143ca63e75ce_=_
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+
+Hello topencheres,
+
+Follow the link below to verify your email:
+=
+
+http://interfacesms.local/site/verify-email?token=3D2SN5thUbOe1e24u12EjA=
+0G-kIkFHTffh_1613463264
+
+--_=_swift_1613463264_16745ced4625d9423030143ca63e75ce_=_
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org=
+/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns=3D"http://www.w3.org/1999/=
+xhtml">
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/ht=
+ml; charset=3DUTF-8" />
+    <title></title>
+    </head>
+<body>
+    =
+    <div class=3D"verify-email">
+    <p>Hello topencheres,</p>
+
+    <=
+p>Follow the link below to verify your email:</p>
+
+    <p><a href=3D"ht=
+tp://interfacesms.local/site/verify-email?token=3D2SN5thUbOe1e24u12EjA0G-kI=
+kFHTffh_1613463264">http://interfacesms.local/site/verify-email?token=3D2SN=
+5thUbOe1e24u12EjA0G-kIkFHTffh_1613463264</a></p>
+</div>
+    </body>
+<=
+/html>
+
+
+--_=_swift_1613463264_16745ced4625d9423030143ca63e75ce_=_--

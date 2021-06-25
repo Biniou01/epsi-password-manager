@@ -10,13 +10,13 @@ use yii\base\Exception;
 class Encrypt extends Component
 {
 
-    public string $pubkey = '...public key here...';
-    public string $privkey = '...private key here...';
+    public $pubkey = '...public key here...';
+    public $privkey = '...private key here...';
 
     /**
      * @throws Exception
      */
-    public function encrypt($data): string
+    public function encrypt($data)
     {
         if (openssl_public_encrypt($data, $encrypted, $this->pubkey)) {
             $data = base64_encode($encrypted);
