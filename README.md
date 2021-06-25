@@ -1,60 +1,98 @@
-<p align="center">
-    <a href="https://github.com/yiisoft" target="_blank">
-        <img src="https://avatars0.githubusercontent.com/u/993323" height="100px">
-    </a>
-    <h1 align="center">Yii 2 Advanced Project Template</h1>
-    <br>
-</p>
+Projet Cryptographie
+Gestionnaire de mots de passes
 
-Yii 2 Advanced Project Template is a skeleton [Yii 2](http://www.yiiframework.com/) application best for
-developing complex Web applications with multiple tiers.
+Objectif
+Créer un logiciel de gestion de mots de passe, ce logiciel doit permettre à des utilisateurs de stocker leurs mots de passe de façon sécurisée.
 
-The template includes three tiers: front end, back end, and console, each of which
-is a separate Yii application.
+Déployer ce logiciel sur un serveur.
+User Stories
+En tant qu’utilisateur, je veux pouvoir stocker un mot de passe de façon sécurisée.
 
-The template is designed to work in a team development environment. It supports
-deploying the application in different environments.
+En tant qu’utilisateur, je veux pouvoir lister mes mots de passes.
 
-Documentation is at [docs/guide/README.md](docs/guide/README.md).
+En tant qu’utilisateur, je veux pouvoir récupérer un mot de passe.
 
-[![Latest Stable Version](https://img.shields.io/packagist/v/yiisoft/yii2-app-advanced.svg)](https://packagist.org/packages/yiisoft/yii2-app-advanced)
-[![Total Downloads](https://img.shields.io/packagist/dt/yiisoft/yii2-app-advanced.svg)](https://packagist.org/packages/yiisoft/yii2-app-advanced)
-[![build](https://github.com/yiisoft/yii2-app-advanced/workflows/build/badge.svg)](https://github.com/yiisoft/yii2-app-advanced/actions?query=workflow%3Abuild)
+En tant qu’utilisateur, je veux pouvoir supprimer un mot de passe.
+Contraintes
+L’ensemble des développements se fera sur Github. Le dépôt suivant devra être forké et votre travail réalisé dans ce fork: https://github.com/Aschen/epsi-password-manager
 
-DIRECTORY STRUCTURE
--------------------
+Les mots de passe doivent être stockés de manière sécurisée:
+la compromission de la base de donnée ne doit pas entraîner la compromission des mots de passe
+la compromission du serveur ne doit pas entraîner la compromission des mots de passe
+la compromission du réseau (Man In The Middle) ne doit pas entraîner la compromission des mots de passe
 
-```
-common
-    config/              contains shared configurations
-    mail/                contains view files for e-mails
-    models/              contains model classes used in both backend and frontend
-    tests/               contains tests for common classes    
-console
-    config/              contains console configurations
-    controllers/         contains console controllers (commands)
-    migrations/          contains database migrations
-    models/              contains console-specific model classes
-    runtime/             contains files generated during runtime
-backend
-    assets/              contains application assets such as JavaScript and CSS
-    config/              contains backend configurations
-    controllers/         contains Web controller classes
-    models/              contains backend-specific model classes
-    runtime/             contains files generated during runtime
-    tests/               contains tests for backend application    
-    views/               contains view files for the Web application
-    web/                 contains the entry script and Web resources
-frontend
-    assets/              contains application assets such as JavaScript and CSS
-    config/              contains frontend configurations
-    controllers/         contains Web controller classes
-    models/              contains frontend-specific model classes
-    runtime/             contains files generated during runtime
-    tests/               contains tests for frontend application
-    views/               contains view files for the Web application
-    web/                 contains the entry script and Web resources
-    widgets/             contains frontend widgets
-vendor/                  contains dependent 3rd-party packages
-environments/            contains environment-based overrides
-```
+Les utilisateurs doivent pouvoir:
+Enregistrer un mot de passe avec des métadonnées (description, adresse du site, …)
+Lister leurs mots de passe
+Récupérer un mot de passe
+Supprimer un mot de passe
+
+Le logiciel (backend) devra être déployé de façon sécurisée sur un serveur.
+
+Les bonnes pratique de sécurisation d’un serveur linux devront être respectées au maximum:
+TLS
+Droits des fichiers
+Pare Feu
+...
+Travail attendu  
+Le code source et l’ensemble des scripts devra être versionné et publié sur Github
+
+A priori l’application sera composée à minima d’un client et d’un backend.
+
+Le backend devra être déployé sur un serveur distant.
+Alternative
+Modélisation UML de la base de données
+
+Modélisation du diagramme d’activités
+
+Architecture du déploiement
+
+Un document devra expliciter la démarche de
+sécurisation des mots de passe
+sécurisation du serveur 
+Bonus
+Gérer ses propres mots de passe c’est bien mais gérer les mots de passe d’une équipe c’est mieux!
+Transformer le gestionnaire pour qu’il puisse gérer les mots de passe d’une équipe. (Exemple https://www.passbolt.com/)
+
+Le déploiement doit se faire automatiquement au moyen d’une CI/CD.
+
+Permettre de partager des fichiers: utilisation d’un crypto-système hybride.
+
+Utilisation de Kuzzle.
+Annexes
+Quelques ressources pour vous aider
+Kuzzle
+https://docs.kuzzle.io/core/2/guides/getting-started/run-kuzzle/
+https://docs.kuzzle.io/core/2/guides/getting-started/write-application/
+https://docs.kuzzle.io/core/2/guides/main-concepts/data-storage/
+https://docs.kuzzle.io/sdk/js/7/getting-started/node-js/
+https://docs.kuzzle.io/sdk/js/7/controllers/document/create/
+Javascript
+https://www.npmjs.com/package/node-rsa
+
+Ruby
+
+https://ruby-doc.org/stdlib-2.6.1/libdoc/openssl/rdoc/OpenSSL/PKey/RSA.html
+https://gist.github.com/gevans/6004752
+
+PHP
+https://www.php.net/manual/en/function.openssl-public-encrypt.php
+https://www.php.net/manual/en/function.openssl-private-decrypt.php
+
+Python
+https://stuvel.eu/python-rsa-doc/usage.html#encryption-and-decryption
+
+Java (for masochists)
+
+https://niels.nu/blog/2016/java-rsa
+https://www.ruby-lang.org/en/documentation/ruby-from-other-languages/to-ruby-from-java/
+
+
+DevOps / SecOps
+https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-ubuntu-20-04
+https://www.ssllabs.com/ssltest/
+https://www.logsign.com/blog/best-practices-for-security-in-ssh/
+https://www.acunetix.com/blog/web-security-zone/hardening-nginx/
+https://docs.kuzzle.io/core/2/guides/getting-started/deploy-your-application/
+
+
