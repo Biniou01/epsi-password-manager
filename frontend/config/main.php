@@ -41,7 +41,7 @@ return [
             'showScriptName' => false,
             'rules' => [
                 ['class' => 'yii\rest\UrlRule', 'controller' => 'user', 'extraPatterns' => ['GET search' => 'search']],
-                ['class' => 'yii\rest\UrlRule', 'controller' => 'sms', 'extraPatterns' => ['GET search' => 'search']],
+                ['class' => 'yii\rest\UrlRule', 'controller' => 'mdp', 'extraPatterns' => ['GET search' => 'search']],
                 'index' => '/site/index',
                 'about' => '/site/about',
                 'contact' => '/site/contact',
