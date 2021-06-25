@@ -12,7 +12,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - run: ls
+      - run: touch /root/test
         env:
            SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
            REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
