@@ -1,100 +1,60 @@
-# EPSI Password Manager
+<p align="center">
+    <a href="https://github.com/yiisoft" target="_blank">
+        <img src="https://avatars0.githubusercontent.com/u/993323" height="100px">
+    </a>
+    <h1 align="center">Yii 2 Advanced Project Template</h1>
+    <br>
+</p>
 
-EPM (EPSI Password Manager) is a project to apply cryptographic concepts in an application to build a secure password manager.
+Yii 2 Advanced Project Template is a skeleton [Yii 2](http://www.yiiframework.com/) application best for
+developing complex Web applications with multiple tiers.
 
-## Goal
+The template includes three tiers: front end, back end, and console, each of which
+is a separate Yii application.
 
-Create password management software, this software should allow users to store their passwords securely.
+The template is designed to work in a team development environment. It supports
+deploying the application in different environments.
 
-Deploy this software on a server with a CI / CD.
+Documentation is at [docs/guide/README.md](docs/guide/README.md).
 
-## Constraints
+[![Latest Stable Version](https://img.shields.io/packagist/v/yiisoft/yii2-app-advanced.svg)](https://packagist.org/packages/yiisoft/yii2-app-advanced)
+[![Total Downloads](https://img.shields.io/packagist/dt/yiisoft/yii2-app-advanced.svg)](https://packagist.org/packages/yiisoft/yii2-app-advanced)
+[![build](https://github.com/yiisoft/yii2-app-advanced/workflows/build/badge.svg)](https://github.com/yiisoft/yii2-app-advanced/actions?query=workflow%3Abuild)
 
-All development will be done on Github by forking this repository.
+DIRECTORY STRUCTURE
+-------------------
 
-Passwords must be stored securely:
- - database compromise must not lead to the compromise of passwords
- - server compromise (Man In The Middle) must not lead to the compromise of passwords
-
-Users should be able to:
- - Save a password with metadata (description, site address, etc.)
- - List their passwords
- - Get a password
- - Delete a password
-
-The software must be deployed securely on a server. Deployment should be done automatically by means of a CI / CD.
-
-Best practices for securing a Linux server should be respected as much as possible:
-  - TLS
-  - File rights
-  - Firewall
-  - ...
-
-## Expected work
-
-The source code and all scripts must be versioned and published on Github
-
-The application must be usable at a minimum via a REST API in JSON.
-
-The API should be briefly documented: markdown, Swagger, Postman collection, ...
-
-The application will need to be deployed on a remote server.
-
-A document should explain the process of
-  - secure passwords
-  - securing the server
-
-## Bonus
-
-Managing your own passwords is good, but managing team passwords is better!
-
-Transform the manager so that he can manage team passwords.
-
-Allow file sharing: use of a hybrid cryptosystem.
-
-Using Kuzzle.
-
-## Appendices
-
-_Some resources to help you_
-
-### Kuzzle
-
-_Don't loose time developping an API, there is very few backend business logic in this project._
-
-https://docs.kuzzle.io/core/2/guides/getting-started/run-kuzzle/  
-https://docs.kuzzle.io/core/2/guides/getting-started/write-application/  
-https://docs.kuzzle.io/core/2/guides/main-concepts/data-storage/  
-https://docs.kuzzle.io/sdk/js/7/getting-started/node-js/  
-https://docs.kuzzle.io/sdk/js/7/controllers/document/create/  
-
-### Javascript
-
-https://www.npmjs.com/package/node-rsa
-
-### Ruby
-
-https://ruby-doc.org/stdlib-2.6.1/libdoc/openssl/rdoc/OpenSSL/PKey/RSA.html
-https://gist.github.com/gevans/6004752
-
-### PHP
-
-https://www.php.net/manual/en/function.openssl-public-encrypt.php
-https://www.php.net/manual/en/function.openssl-private-decrypt.php
-
-### Python
-
-https://stuvel.eu/python-rsa-doc/usage.html#encryption-and-decryption
-
-### Java (for masochists)
-
-https://niels.nu/blog/2016/java-rsa
-https://www.ruby-lang.org/en/documentation/ruby-from-other-languages/to-ruby-from-java/
-
-### DevOps / SecOps
-
-https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-ubuntu-20-04  
-https://www.ssllabs.com/ssltest/  
-https://www.logsign.com/blog/best-practices-for-security-in-ssh/  
-https://www.acunetix.com/blog/web-security-zone/hardening-nginx/  
-https://docs.kuzzle.io/core/2/guides/getting-started/deploy-your-application/   
+```
+common
+    config/              contains shared configurations
+    mail/                contains view files for e-mails
+    models/              contains model classes used in both backend and frontend
+    tests/               contains tests for common classes    
+console
+    config/              contains console configurations
+    controllers/         contains console controllers (commands)
+    migrations/          contains database migrations
+    models/              contains console-specific model classes
+    runtime/             contains files generated during runtime
+backend
+    assets/              contains application assets such as JavaScript and CSS
+    config/              contains backend configurations
+    controllers/         contains Web controller classes
+    models/              contains backend-specific model classes
+    runtime/             contains files generated during runtime
+    tests/               contains tests for backend application    
+    views/               contains view files for the Web application
+    web/                 contains the entry script and Web resources
+frontend
+    assets/              contains application assets such as JavaScript and CSS
+    config/              contains frontend configurations
+    controllers/         contains Web controller classes
+    models/              contains frontend-specific model classes
+    runtime/             contains files generated during runtime
+    tests/               contains tests for frontend application
+    views/               contains view files for the Web application
+    web/                 contains the entry script and Web resources
+    widgets/             contains frontend widgets
+vendor/                  contains dependent 3rd-party packages
+environments/            contains environment-based overrides
+```
