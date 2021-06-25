@@ -1,98 +1,100 @@
-Projet Cryptographie
-Gestionnaire de mots de passes
+# EPSI Password Manager
 
-Objectif
-Créer un logiciel de gestion de mots de passe, ce logiciel doit permettre à des utilisateurs de stocker leurs mots de passe de façon sécurisée.
+EPM (EPSI Password Manager) is a project to apply cryptographic concepts in an application to build a secure password manager.
 
-Déployer ce logiciel sur un serveur.
-User Stories
-En tant qu’utilisateur, je veux pouvoir stocker un mot de passe de façon sécurisée.
+## Goal
 
-En tant qu’utilisateur, je veux pouvoir lister mes mots de passes.
+Create password management software, this software should allow users to store their passwords securely.
 
-En tant qu’utilisateur, je veux pouvoir récupérer un mot de passe.
+Deploy this software on a server with a CI / CD.
 
-En tant qu’utilisateur, je veux pouvoir supprimer un mot de passe.
-Contraintes
-L’ensemble des développements se fera sur Github. Le dépôt suivant devra être forké et votre travail réalisé dans ce fork: https://github.com/Aschen/epsi-password-manager
+## Constraints
 
-Les mots de passe doivent être stockés de manière sécurisée:
-la compromission de la base de donnée ne doit pas entraîner la compromission des mots de passe
-la compromission du serveur ne doit pas entraîner la compromission des mots de passe
-la compromission du réseau (Man In The Middle) ne doit pas entraîner la compromission des mots de passe
+All development will be done on Github by forking this repository.
 
-Les utilisateurs doivent pouvoir:
-Enregistrer un mot de passe avec des métadonnées (description, adresse du site, …)
-Lister leurs mots de passe
-Récupérer un mot de passe
-Supprimer un mot de passe
+Passwords must be stored securely:
+ - database compromise must not lead to the compromise of passwords
+ - server compromise (Man In The Middle) must not lead to the compromise of passwords
 
-Le logiciel (backend) devra être déployé de façon sécurisée sur un serveur.
+Users should be able to:
+ - Save a password with metadata (description, site address, etc.)
+ - List their passwords
+ - Get a password
+ - Delete a password
 
-Les bonnes pratique de sécurisation d’un serveur linux devront être respectées au maximum:
-TLS
-Droits des fichiers
-Pare Feu
-...
-Travail attendu  
-Le code source et l’ensemble des scripts devra être versionné et publié sur Github
+The software must be deployed securely on a server. Deployment should be done automatically by means of a CI / CD.
 
-A priori l’application sera composée à minima d’un client et d’un backend.
+Best practices for securing a Linux server should be respected as much as possible:
+  - TLS
+  - File rights
+  - Firewall
+  - ...
 
-Le backend devra être déployé sur un serveur distant.
-Alternative
-Modélisation UML de la base de données
+## Expected work
 
-Modélisation du diagramme d’activités
+The source code and all scripts must be versioned and published on Github
 
-Architecture du déploiement
+The application must be usable at a minimum via a REST API in JSON.
 
-Un document devra expliciter la démarche de
-sécurisation des mots de passe
-sécurisation du serveur 
-Bonus
-Gérer ses propres mots de passe c’est bien mais gérer les mots de passe d’une équipe c’est mieux!
-Transformer le gestionnaire pour qu’il puisse gérer les mots de passe d’une équipe. (Exemple https://www.passbolt.com/)
+The API should be briefly documented: markdown, Swagger, Postman collection, ...
 
-Le déploiement doit se faire automatiquement au moyen d’une CI/CD.
+The application will need to be deployed on a remote server.
 
-Permettre de partager des fichiers: utilisation d’un crypto-système hybride.
+A document should explain the process of
+  - secure passwords
+  - securing the server
 
-Utilisation de Kuzzle.
-Annexes
-Quelques ressources pour vous aider
-Kuzzle
-https://docs.kuzzle.io/core/2/guides/getting-started/run-kuzzle/
-https://docs.kuzzle.io/core/2/guides/getting-started/write-application/
-https://docs.kuzzle.io/core/2/guides/main-concepts/data-storage/
-https://docs.kuzzle.io/sdk/js/7/getting-started/node-js/
-https://docs.kuzzle.io/sdk/js/7/controllers/document/create/
-Javascript
+## Bonus
+
+Managing your own passwords is good, but managing team passwords is better!
+
+Transform the manager so that he can manage team passwords.
+
+Allow file sharing: use of a hybrid cryptosystem.
+
+Using Kuzzle.
+
+## Appendices
+
+_Some resources to help you_
+
+### Kuzzle
+
+_Don't loose time developping an API, there is very few backend business logic in this project._
+
+https://docs.kuzzle.io/core/2/guides/getting-started/run-kuzzle/  
+https://docs.kuzzle.io/core/2/guides/getting-started/write-application/  
+https://docs.kuzzle.io/core/2/guides/main-concepts/data-storage/  
+https://docs.kuzzle.io/sdk/js/7/getting-started/node-js/  
+https://docs.kuzzle.io/sdk/js/7/controllers/document/create/  
+
+### Javascript
+
 https://www.npmjs.com/package/node-rsa
 
-Ruby
+### Ruby
 
 https://ruby-doc.org/stdlib-2.6.1/libdoc/openssl/rdoc/OpenSSL/PKey/RSA.html
 https://gist.github.com/gevans/6004752
 
-PHP
+### PHP
+
 https://www.php.net/manual/en/function.openssl-public-encrypt.php
 https://www.php.net/manual/en/function.openssl-private-decrypt.php
 
-Python
+### Python
+
 https://stuvel.eu/python-rsa-doc/usage.html#encryption-and-decryption
 
-Java (for masochists)
+### Java (for masochists)
 
 https://niels.nu/blog/2016/java-rsa
 https://www.ruby-lang.org/en/documentation/ruby-from-other-languages/to-ruby-from-java/
 
+### DevOps / SecOps
 
-DevOps / SecOps
-https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-ubuntu-20-04
-https://www.ssllabs.com/ssltest/
-https://www.logsign.com/blog/best-practices-for-security-in-ssh/
-https://www.acunetix.com/blog/web-security-zone/hardening-nginx/
-https://docs.kuzzle.io/core/2/guides/getting-started/deploy-your-application/
-
-
+https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-ubuntu-20-04  
+https://www.ssllabs.com/ssltest/  
+https://www.logsign.com/blog/best-practices-for-security-in-ssh/  
+https://www.acunetix.com/blog/web-security-zone/hardening-nginx/  
+https://docs.kuzzle.io/core/2/guides/getting-started/deploy-your-application/   
